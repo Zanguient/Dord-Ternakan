@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F17FE180-A71C-4CE4-B011-1888B623F0B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ternakan</RootNamespace>
+    <AssemblyName>Ternakan</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Ternakan.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.5.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=2.5.1.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\Sistema Comercial - Marine Center\Sistema Comercial - Marine Center\bin\Debug\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.UnitTests, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\Sistema Comercial - Marine Center\Sistema Comercial - Marine Center\bin\Debug\FirebirdSql.Data.UnitTests.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarSenha.Designer.cs">
+      <DependentUpon>frmAlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCruzamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCruzamento.Designer.cs">
+      <DependentUpon>frmCruzamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLactacaoDiaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLactacaoDiaria.Designer.cs">
+      <DependentUpon>frmLactacaoDiaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuAgenda.Designer.cs">
+      <DependentUpon>frmMenuAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuAnimais.Designer.cs">
+      <DependentUpon>frmMenuAnimais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastraoFazenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastraoFazenda.Designer.cs">
+      <DependentUpon>frmCadastraoFazenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuControleAniamais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuControleAniamais.Designer.cs">
+      <DependentUpon>frmMenuControleAniamais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuFazenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuFazenda.Designer.cs">
+      <DependentUpon>frmMenuFazenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome2.Designer.cs">
+      <DependentUpon>frmHome2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlterarPiquetGados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarPiquetGados.Designer.cs">
+      <DependentUpon>frmAlterarPiquetGados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEsqueceuSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEsqueceuSenha.Designer.cs">
+      <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuLactacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuLactacao.Designer.cs">
+      <DependentUpon>frmMenuLactacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuReproducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuReproducao.Designer.cs">
+      <DependentUpon>frmMenuReproducao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuUsuario.Designer.cs">
+      <DependentUpon>frmMenuUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMudarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMudarSenha.Designer.cs">
+      <DependentUpon>frmMudarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPiquet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPiquet.Designer.cs">
+      <DependentUpon>frmPiquet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProdutos.Designer.cs">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuRelatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuRelatorios.Designer.cs">
+      <DependentUpon>frmMenuRelatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSemens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSemens.Designer.cs">
+      <DependentUpon>frmSemens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrabalhadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrabalhadores.Designer.cs">
+      <DependentUpon>frmTrabalhadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVacasLactacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVacasLactacao.Designer.cs">
+      <DependentUpon>frmVacasLactacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioBrancoLactacao.cs">
+      <DependentUpon>RelatorioBrancoLactacao.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RelatorioBrancoVacinacao.cs">
+      <DependentUpon>RelatorioBrancoVacinacao.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RelatorioBrancoCruzamento.cs">
+      <DependentUpon>RelatorioBrancoCruzamento.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="dsFazendasEUsuarios.cs">
+      <DependentUpon>dsFazendasEUsuarios.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsFazendasEUsuarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFazendasEUsuarios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsVirtual.cs">
+      <DependentUpon>dsVirtual.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsVirtual.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsVirtual.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fmrRemoverUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrRemoverUsuario.Designer.cs">
+      <DependentUpon>fmrRemoverUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAboutBox.Designer.cs">
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdicionarHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdicionarHistorico.Designer.cs">
+      <DependentUpon>frmAdicionarHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadSemem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadSemem.Designer.cs">
+      <DependentUpon>frmCadSemem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEscolherPiquet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEscolherPiquet.Designer.cs">
+      <DependentUpon>frmEscolherPiquet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImprimirRelatorioRegistrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImprimirRelatorioRegistrado.Designer.cs">
+      <DependentUpon>frmImprimirRelatorioRegistrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlterarEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarEmail.Designer.cs">
+      <DependentUpon>frmAlterarEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastroUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastroUsuarios.Designer.cs">
+      <DependentUpon>frmCadastroUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntervaloDe Lactacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntervaloDe Lactacao.Designer.cs">
+      <DependentUpon>frmIntervaloDe Lactacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntervaloNascimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntervaloNascimento.Designer.cs">
+      <DependentUpon>frmIntervaloNascimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLactacaoDg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLactacaoDg.Designer.cs">
+      <DependentUpon>frmLactacaoDg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLactacaoDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLactacaoDia.Designer.cs">
+      <DependentUpon>frmLactacaoDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSemensCadastrados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSemensCadastrados.Designer.cs">
+      <DependentUpon>frmSemensCadastrados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTabelaVacina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabelaVacina.Designer.cs">
+      <DependentUpon>frmTabelaVacina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrabalhadoresInativos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrabalhadoresInativos.Designer.cs">
+      <DependentUpon>frmTrabalhadoresInativos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerHistorico.Designer.cs">
+      <DependentUpon>frmVerHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisualizarHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisualizarHistorico.Designer.cs">
+      <DependentUpon>frmVisualizarHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="relatorioCabecalho.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relatorioCabecalho.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioEntradaGadoFim.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioEntradaGadoFim.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioGadoRegistrado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioGadoRegistrado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioLdia.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioLdia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioMortalidade.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioMortalidade.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioNatalidade.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioNatalidade.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioPerfilGado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioPerfilGado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioPiquet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioPiquet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioPrevisaoNascimento.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioPrevisaoNascimento.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioProdutoFinal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioProdutoFinal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioSemanalLactacao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioSemanalLactacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsTernakan.cs">
+      <DependentUpon>dsTernakan.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsTernakan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTernakan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="fmrAlterarPiquet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmrAlterarPiquet.Designer.cs">
+      <DependentUpon>fmrAlterarPiquet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdicionaRemoverTrabalhadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdicionaRemoverTrabalhadores.Designer.cs">
+      <DependentUpon>frmAdicionaRemoverTrabalhadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdicionarPiquets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdicionarPiquets.Designer.cs">
+      <DependentUpon>frmAdicionarPiquets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdicionarVacaLactacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdicionarVacaLactacao.Designer.cs">
+      <DependentUpon>frmAdicionarVacaLactacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgenda.Designer.cs">
+      <DependentUpon>frmAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusca.Designer.cs">
+      <DependentUpon>frmBusca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDadosVacinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDadosVacinas.Designer.cs">
+      <DependentUpon>frmDadosVacinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFazendaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFazendaCadastro.Designer.cs">
+      <DependentUpon>frmFazendaCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGadoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGadoCadastro.Designer.cs">
+      <DependentUpon>frmGadoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGadoRegistrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGadoRegistrado.Designer.cs">
+      <DependentUpon>frmGadoRegistrado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIncluirCruzamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIncluirCruzamento.Designer.cs">
+      <DependentUpon>frmIncluirCruzamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMortalidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMortalidade.Designer.cs">
+      <DependentUpon>frmMortalidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfilGado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfilGado.Designer.cs">
+      <DependentUpon>frmPerfilGado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrevisaoNascimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrevisaoNascimento.Designer.cs">
+      <DependentUpon>frmPrevisaoNascimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduto.Designer.cs">
+      <DependentUpon>frmProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuantidadeGado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuantidadeGado.Designer.cs">
+      <DependentUpon>frmQuantidadeGado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioEntrada.Designer.cs">
+      <DependentUpon>frmRelatorioEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioSaida.Designer.cs">
+      <DependentUpon>frmRelatorioSaida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRemoverCruzamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoverCruzamento.Designer.cs">
+      <DependentUpon>frmRemoverCruzamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultadoBusca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultadoBusca.Designer.cs">
+      <DependentUpon>frmResultadoBusca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRevomerVacaLactacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRevomerVacaLactacao.Designer.cs">
+      <DependentUpon>frmRevomerVacaLactacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaidaAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaidaAnimais.Designer.cs">
+      <DependentUpon>frmSaidaAnimais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelecionarFazenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelecionarFazenda.Designer.cs">
+      <DependentUpon>frmSelecionarFazenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVacinacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVacinacao.Designer.cs">
+      <DependentUpon>frmVacinacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAlterarSenha.resx">
+      <DependentUpon>frmAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCruzamento.resx">
+      <DependentUpon>frmCruzamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLactacaoDiaria.resx">
+      <DependentUpon>frmLactacaoDiaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuAgenda.resx">
+      <DependentUpon>frmMenuAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuAnimais.resx">
+      <DependentUpon>frmMenuAnimais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastraoFazenda.resx">
+      <DependentUpon>frmCadastraoFazenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome2.resx">
+      <DependentUpon>frmHome2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlterarPiquetGados.resx">
+      <DependentUpon>frmAlterarPiquetGados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEsqueceuSenha.resx">
+      <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuControleAniamais.resx">
+      <DependentUpon>frmMenuControleAniamais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuFazenda.resx">
+      <DependentUpon>frmMenuFazenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuLactacao.resx">
+      <DependentUpon>frmMenuLactacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuReproducao.resx">
+      <DependentUpon>frmMenuReproducao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuUsuario.resx">
+      <DependentUpon>frmMenuUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMudarSenha.resx">
+      <DependentUpon>frmMudarSenha.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPiquet.resx">
+      <DependentUpon>frmPiquet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProdutos.resx">
+      <DependentUpon>frmProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuRelatorios.resx">
+      <DependentUpon>frmMenuRelatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSemens.resx">
+      <DependentUpon>frmSemens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrabalhadores.resx">
+      <DependentUpon>frmTrabalhadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVacasLactacao.resx">
+      <DependentUpon>frmVacasLactacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioBrancoLactacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioBrancoLactacao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioBrancoVacinacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioBrancoVacinacao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioBrancoCruzamento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioBrancoCruzamento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrRemoverUsuario.resx">
+      <DependentUpon>fmrRemoverUsuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAboutBox.resx">
+      <DependentUpon>frmAboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdicionarHistorico.resx">
+      <DependentUpon>frmAdicionarHistorico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadSemem.resx">
+      <DependentUpon>frmCadSemem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEscolherPiquet.resx">
+      <DependentUpon>frmEscolherPiquet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImprimirRelatorioRegistrado.resx">
+      <DependentUpon>frmImprimirRelatorioRegistrado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlterarEmail.resx">
+      <DependentUpon>frmAlterarEmail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastroUsuarios.resx">
+      <DependentUpon>frmCadastroUsuarios.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntervaloDe Lactacao.resx">
+      <DependentUpon>frmIntervaloDe Lactacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntervaloNascimento.resx">
+      <DependentUpon>frmIntervaloNascimento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLactacaoDg.resx">
+      <DependentUpon>frmLactacaoDg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLactacaoDia.resx">
+      <DependentUpon>frmLactacaoDia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSemensCadastrados.resx">
+      <DependentUpon>frmSemensCadastrados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTabelaVacina.resx">
+      <DependentUpon>frmTabelaVacina.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrabalhadoresInativos.resx">
+      <DependentUpon>frmTrabalhadoresInativos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerHistorico.resx">
+      <DependentUpon>frmVerHistorico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisualizarHistorico.resx">
+      <DependentUpon>frmVisualizarHistorico.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="relatorioCabecalho.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relatorioCabecalho.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioEntradaGadoFim.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioEntradaGadoFim.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioGadoRegistrado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioGadoRegistrado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioLdia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioLdia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioMortalidade.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioMortalidade.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioNatalidade.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioNatalidade.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioPerfilGado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioPerfilGado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioPiquet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioPiquet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioPrevisaoNascimento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioPrevisaoNascimento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioProdutoFinal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioProdutoFinal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioSemanalLactacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioSemanalLactacao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrAlterarPiquet.resx">
+      <DependentUpon>fmrAlterarPiquet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdicionaRemoverTrabalhadores.resx">
+      <DependentUpon>frmAdicionaRemoverTrabalhadores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdicionarPiquets.resx">
+      <DependentUpon>frmAdicionarPiquets.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdicionarVacaLactacao.resx">
+      <DependentUpon>frmAdicionarVacaLactacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgenda.resx">
+      <DependentUpon>frmAgenda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusca.resx">
+      <DependentUpon>frmBusca.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDadosVacinas.resx">
+      <DependentUpon>frmDadosVacinas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFazendaCadastro.resx">
+      <DependentUpon>frmFazendaCadastro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGadoCadastro.resx">
+      <DependentUpon>frmGadoCadastro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGadoRegistrado.resx">
+      <DependentUpon>frmGadoRegistrado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIncluirCruzamento.resx">
+      <DependentUpon>frmIncluirCruzamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMortalidade.resx">
+      <DependentUpon>frmMortalidade.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfilGado.resx">
+      <DependentUpon>frmPerfilGado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrevisaoNascimento.resx">
+      <DependentUpon>frmPrevisaoNascimento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProduto.resx">
+      <DependentUpon>frmProduto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuantidadeGado.resx">
+      <DependentUpon>frmQuantidadeGado.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioEntrada.resx">
+      <DependentUpon>frmRelatorioEntrada.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioSaida.resx">
+      <DependentUpon>frmRelatorioSaida.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoverCruzamento.resx">
+      <DependentUpon>frmRemoverCruzamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultadoBusca.resx">
+      <DependentUpon>frmResultadoBusca.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRevomerVacaLactacao.resx">
+      <DependentUpon>frmRevomerVacaLactacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaidaAnimais.resx">
+      <DependentUpon>frmSaidaAnimais.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelecionarFazenda.resx">
+      <DependentUpon>frmSelecionarFazenda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVacinacao.resx">
+      <DependentUpon>frmVacinacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatoriosSaidaGado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatoriosSaidaGado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioTrabalhadores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioTrabalhadores.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatorioTrabalhadoresDemitidos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioTrabalhadoresDemitidos1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabela.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Tabela.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerRelatorio.resx">
+      <DependentUpon>VerRelatorio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="CrystalReport2.mht" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RelatoriosSaidaGado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatoriosSaidaGado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioTrabalhadores.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioTrabalhadores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RelatorioTrabalhadoresDemitidos1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioTrabalhadoresDemitidos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tabela.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tabela.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VerRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerRelatorio.Designer.cs">
+      <DependentUpon>VerRelatorio.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="dsFazendasEUsuarios.xsc">
+      <DependentUpon>dsFazendasEUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="dsFazendasEUsuarios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFazendasEUsuarios.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsFazendasEUsuarios.xss">
+      <DependentUpon>dsFazendasEUsuarios.xsd</DependentUpon>
+    </None>
+    <None Include="dsTernakan.xsc">
+      <DependentUpon>dsTernakan.xsd</DependentUpon>
+    </None>
+    <None Include="dsTernakan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTernakan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsTernakan.xss">
+      <DependentUpon>dsTernakan.xsd</DependentUpon>
+    </None>
+    <None Include="dsVirtual.xsc">
+      <DependentUpon>dsVirtual.xsd</DependentUpon>
+    </None>
+    <None Include="dsVirtual.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsVirtual.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsVirtual.xss">
+      <DependentUpon>dsVirtual.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\fundo do programa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo do programa1.jpg" />
+    <Content Include="Ternakan.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+FILE QUARANTINED
+
+Microsoft Online has removed winmail.dat->Ternakan - 1.12.rar->Ternakan - 1.12\Ternakan - 1.1\Ternakan\obj\Debug\Ternakan.exe since it
+was found to match the FILE FILTER= unnamed: *.exe file filter.
